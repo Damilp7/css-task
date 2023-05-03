@@ -1,0 +1,169 @@
+*{
+  padding: 0;
+  margin: 0;
+  
+}
+body{
+  background-image: url(images/hd2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgb(8, 43, 23);
+  color: white;
+  padding-bottom: 100px;
+}
+/* Navigation section starts here */
+.logo-section{
+  display: flex;
+ width: 320px;
+ align-items: center;
+ justify-content: space-between;
+ margin-right: 30px;
+}
+nav{
+  padding-top: 22px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  
+}
+nav h3{
+  color: white;
+  padding-left: 50px;
+  font-size: 26px;
+  display: inline-block;
+}
+
+nav h3:hover{
+  cursor: pointer;
+}
+
+.logo{
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  /* text-align: center; */
+}
+nav ul{
+  display: inline-block;
+  float: right;
+
+}
+nav ul li{
+  display: inline;
+  margin-right: 100px;
+  color: white;
+}
+
+#nav{
+  flex: 1;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+nav ul li a:hover{
+  color: red;
+}
+
+nav h3:hover{
+  color: red;
+}
+
+hr{
+  border-color: rgb(8, 43, 23);
+}
+/* Main section starts here */
+main{
+  margin-top: 20px;
+  padding-right: 20px;
+}
+.series{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 30px;
+  margin-left: 20px;
+  border: 3px;
+  border-style: solid;
+  border-color: rgb(12, 233, 86);
+  margin-top: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  padding-right: 12px;
+  
+}
+.anime-titles{
+  width: 300px;
+  margin-left: 30px;
+  border-width: 2px;
+  border-style: double;
+  border-color: yellow;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.anime-pic{
+  height: 400px;
+  width: 300px;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.downloads{
+  padding: 5px 10px;
+  margin-top: 5px;
+  background-color: rgb(12, 233, 86);
+  color: white;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 4px;
+  border-color: rgb(12, 233, 86);
+  margin-left: 100px;
+}
+
+.downloads:hover{
+  background-color: aquamarine;
+  cursor: pointer;
+  border-color: aquamarine;
+}
+
+.anime-name{
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: rgb(12, 233, 86);
+  text-align: center;
+  
+}
+
+.rating{
+ font-size: 18px;
+ text-align: center;
+ padding-bottom: 5px;
+} 
+.download-count {
+font-size: 14px;
+text-align: center;
+padding-bottom: 5px;
+color: rgb(7, 153, 104);
+font-weight: 600;
+}
+
+/* Responsive Settings */
+@media(max-width: 1500px) {
+  .series{ grid-template-columns: 1fr 1fr 1fr}
+}
+@media(max-width: 1200px) {
+  .series{ grid-template-columns: 1fr 1fr}
+}
+@media(max-width: 900px) {
+  .series{ grid-template-columns: 1fr}
+  .anime-titles{margin-left: 120px;}
+}
