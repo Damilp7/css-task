@@ -30,7 +30,7 @@ nav{
 nav h3{
   color: white;
   padding-left: 50px;
-  font-size: 26px;
+  font-size: 24px;
   display: inline-block;
 }
 
@@ -64,7 +64,8 @@ nav ul li{
 nav ul li a{
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 nav ul li a:hover{
@@ -101,7 +102,7 @@ main{
 }
 .anime-titles{
   width: 200px;
-  margin-left: 30px;
+  margin-left: 25px;
   border-width: 2px;
   border-style: double;
   border-color: yellow;
@@ -146,7 +147,7 @@ main{
 }
 
 .rating{
- font-size: 18px;
+ font-size: 14px;
  text-align: center;
  padding-bottom: 5px;
 } 
@@ -159,7 +160,7 @@ font-weight: 600;
 }
 
 /* Responsive Settings */
-@media(max-width: 1500px) {
+@media(max-width: 1300px) {
   .series{ grid-template-columns: 1fr 1fr 1fr}
 }
 @media(max-width: 1200px) {
